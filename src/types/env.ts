@@ -7,4 +7,6 @@ export interface Env {
   APP_URL_FULL: string;
 
   SWAGGER_PREFIX: string;
+
+  FILE_PATH: string;
 }
