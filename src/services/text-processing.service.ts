@@ -31,6 +31,8 @@ async function findLastOccurrence(
     await updateLinesCount();
   }
 
+  if (limit == -1) limit = allLinesCount;
+
   const readStream = fs.createReadStream(configService.FILE_PATH, {});
   const lines = readline.createInterface({
     input: readStream,
